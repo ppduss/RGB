@@ -18,7 +18,7 @@ body {
 
 #container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 18px auto;
 }
 
 h1 {
@@ -61,6 +61,7 @@ button {
     letter-spacing: 1px;
     font-size: inherit;
     transition: all 0.3s;
+    outline: none;
 }
 
 button:hover {

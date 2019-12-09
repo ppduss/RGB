@@ -48,6 +48,9 @@ resetButton.addEventListener("click", function() {
   pickedColor = pickColor();
   //change color display to match picked color
   colorDisplay.textContent = pickedColor;
+  this.textContent = "New Colors";
+  messageDisplay.textContent = "";
+  colorDisplay.style.color = "#ffffff";
   //change colors of the squares
   for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
@@ -112,18 +115,3 @@ function randomColor() {
   var b = Math.floor(Math.random() * 256);
   return "rgb(" + r + ", " + g + ", " + b + ")";
 }
-
-//-----------
-function randomColor2() {
-  //pick a red
-  var r = Math.floor(Math.random() * 256);
-  //pick a green
-  var g = Math.floor(Math.random() * 256);
-  //pick a blue
-  var b = Math.floor(Math.random() * 256);
-  return "(" + r + ", " + g + ", " + b + ")";
-}
-
-bird.addEventListener("click", function() {
-  console.log(randomColor2());
-});
