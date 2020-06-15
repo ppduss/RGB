@@ -1,0 +1,27 @@
+{
+  "name": "rgbgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "RGB.js",
+  "dependencies": {
+    "react-scripts": "^3.4.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppduss/RGB.git"
+  },
+  "author": "Patrick Dussault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppduss/RGB/issues"
+  },
+  "homepage": "https://github.com/ppduss/RGB"
+}
